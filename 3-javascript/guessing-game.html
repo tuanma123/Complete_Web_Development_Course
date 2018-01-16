@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        I am thinking of a number between 1 and 10, what is it?
+    </p>
+    <p>
+        <input type="text" id="guess"> <button id="checkGuess"> Guess!</button>
+    </p>
+    <script type="text/javascript">
+        document.getElementById("checkGuess").onclick = function () {
+            var random = Math.floor(Math.random() * Math.floor(9)) + 1;
+
+            if (document.getElementById("guess").valueOf() == random) {
+                alert("Correct");
+            } else {
+                alert(random)
+                alert("Wrong")
+            }
+        }
+    </script>
+</body>
+</html>

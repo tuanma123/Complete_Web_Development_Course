@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="p1">
+        Hello world!
+    </p>
+    <button id="change">
+        Change text
+    </button>
+
+    <script  type="text/javascript">
+        document.getElementById("change").onclick = function() {
+            alert("Button clicked");
+            document.getElementById("p1").innerHTML = "Hello, Bob";
+        }
+    </script>
+</body>
+</html>
